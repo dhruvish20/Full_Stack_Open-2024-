@@ -9,11 +9,11 @@ const App = () => {
   const [countries, setCountries] = useState([]);
   const [countriesToShow, setCountriesToShow] = useState([]);
 
-  useEffect(() => {
-    axios.get("https://restcountries.com/v3.1/all").then((response) => {
-      setCountries(response.data);
-    });
-  }, []);
+  // useEffect(() => {
+  //   axios.get("https://restcountries.com/v3.1/all").then((response) => {
+  //     setCountries(response.data);
+  //   });
+  // }, []);
 
   const handleQueryChange = (event) => {
     const search = event.target.value;

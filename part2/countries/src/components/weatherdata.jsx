@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 const WeatherData = ({city}) => {
-    const OPENWEATHER_API_KEY ="d99a4fb8826a15b48b32dee474d9679e";
+    const OPENWEATHER_API_KEY = import.meta.env.VITE_SOME_KEY;
     const [weather , setWeather] = useState([]);
 
     useEffect(() => {
